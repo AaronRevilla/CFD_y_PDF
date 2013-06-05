@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Comprobante xmlns="http://www.sat.gob.mx/cfd/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tipoDeComprobante="ingreso" metodoDePago="EFECTIVO" total="2320.00" descuento="0.00" subTotal="2000.00" certificado="MIIE/TCCA+WgAwIBAgIUMzAwMDEwMDAwMDAxMDAwMDA4MDAwDQYJKoZIhvcNAQEFBQAwggFvMRgwFgYDVQQDDA9BLkMuIGRlIHBydWViYXMxLzAtBgNVBAoMJlNlcnZpY2lvIGRlIEFkbWluaXN0cmFjacOzbiBUcmlidXRhcmlhMTgwNgYDVQQLDC9BZG1pbmlzdHJhY2nDs24gZGUgU2VndXJpZGFkIGRlIGxhIEluZm9ybWFjacOzbjEpMCcGCSqGSIb3DQEJARYaYXNpc25ldEBwcnVlYmFzLnNhdC5nb2IubXgxJjAkBgNVBAkMHUF2LiBIaWRhbGdvIDc3LCBDb2wuIEd1ZXJyZXJvMQ4wDAYDVQQRDAUwNjMwMDELMAkGA1UEBhMCTVgxGTAXBgNVBAgMEERpc3RyaXRvIEZlZGVyYWwxEjAQBgNVBAcMCUNveW9hY8OhbjEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTIwMAYJKoZIhvcNAQkCDCNSZXNwb25zYWJsZTogSMOpY3RvciBPcm5lbGFzIEFyY2lnYTAeFw0xMDA3MzAxNjU4NDBaFw0xMjA3MjkxNjU4NDBaMIGWMRIwEAYDVQQDDAlNYXRyaXogU0ExEjAQBgNVBCkMCU1hdHJpeiBTQTESMBAGA1UECgwJTWF0cml6IFNBMSUwIwYDVQQtExxBQUEwMTAxMDFBQUEgLyBBQUFBMDEwMTAxQUFBMR4wHAYDVQQFExUgLyBBQUFBMDEwMTAxSERGUlhYMDExETAPBgNVBAsMCFVuaWRhZCAxMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDD0ltQNthUNUfzq0t1GpIyapjzOn1W5fGM5G/pQyMluCzP9YlVAgBjGgzwYp9Z0J9gadg3y2ZrYDwvv8b72goyRnhnv3bkjVRKlus6LDc00K7Jl23UYzNGlXn5+i0HxxuWonc2GYKFGsN4rFWKVy3Fnpv8Z2D7dNqsVyT5HapEqwIDAQABo4HqMIHnMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMB0GA1UdDgQWBBSYodSwRczzj5H7mcO3+mAyXz+y0DAuBgNVHR8EJzAlMCOgIaAfhh1odHRwOi8vcGtpLnNhdC5nb2IubXgvc2F0LmNybDAzBggrBgEFBQcBAQQnMCUwIwYIKwYBBQUHMAGGF2h0dHA6Ly9vY3NwLnNhdC5nb2IubXgvMB8GA1UdIwQYMBaAFOtZfQQimlONnnEaoFiWKfU54KDFMBAGA1UdIAQJMAcwBQYDKgMEMBMGA1UdJQQMMAoGCCsGAQUFBwMCMA0GCSqGSIb3DQEBBQUAA4IBAQArHQEorApwqumSn5EqDOAjbezi8fLco1cYES/PD+LQRM1Vb1g7VLE3hR4S5NNBv0bMwwWAr0WfL9lRRj0PMKLorO8y4TJjRU8MiYXfzSuKYL5Z16kW8zlVHw7CtmjhfjoIMwjQo3prifWxFv7VpfIBstKKShU0qB6KzUUNwg2Ola4t4gg2JJcBmyIAIInHSGoeinR2V1tQ10aRqJdXkGin4WZ75yMbQH4L0NfotqY6bpF2CqIY3aogQyJGhUJji4gYnS2DvHcyoICwgawshjSaX8Y0Xlwnuh6EusqhqlhTgwPNAPrKIXCmOWtqjlDhho/lhkHJMzuTn8AoVapbBUnj" noCertificado="30001000000100000800" formaDePago="UNA SOLA EXHIBICIÓN" anoAprobacion="2008" noAprobacion="49" sello="eg6Uhu+H7Supj7NpnJWNrgCY1juORCKZtjIUhFDCRliqSmNgLI8N9saCTeBtm8wUQ9I/FJvFIjuourAprsxky2iFzE5HRh42QQfw1ftvxIK8LJveYtPGZ4i2Ovgtcswgk5XNj7tHZLqFYLcdWtjcEgyNqlp2L6fqbdyLrOKw72c=" fecha="2010-05-03T14:11:36" folio="2" serie="ABCD" version="2.0" xsi:schemaLocation="http://www.sat.gob.mx/cfd/2 http://www.sat.gob.mx/sitio_internet/cfd/2/cfdv2.xsd">
+    <Emisor nombre="CONTRIBUYENTE PRUEBASEIS PATERNOSEIS MATERNOSEIS" rfc="PAMC660606ER9">
+        <DomicilioFiscal codigoPostal="72000" pais="MÉXICO" estado="PUEBLA" municipio="PUEBLA" localidad="PUEBLA" colonia="PUEBLA CENTRO" noInterior="6" noExterior="6" calle="PRUEBA SEIS"/>
+    </Emisor>
+    <Receptor nombre="ROSA MARÍA CALDERÓN UIRIEGAS" rfc="CAUR390312S87">
+        <Domicilio codigoPostal="95465" pais="México" estado="NUEVO LEON" colonia="JARDINES DEL VALLE" noExterior="52" calle="TOPOCHICO"/>
+    </Receptor>
+    <Conceptos>
+        <Concepto importe="2000.00" valorUnitario="2000.00" descripcion="Asesoria Fiscal y administrativa" noIdentificacion="01" unidad="Servicio" cantidad="1.00"/>
+    </Conceptos>
+    <Impuestos totalImpuestosTrasladados="320.00">
+        <Traslados>
+            <Traslado importe="320.00" tasa="16.00" impuesto="IVA"/>
+        </Traslados>
+    </Impuestos>
+</Comprobante>

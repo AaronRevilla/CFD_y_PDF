@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>run</actionName>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-classpath %classpath mx.bigdata.sat.cfd.tools.CLI sellar C:\Users\AARON\Documents\Factura_Electronica\factura-electronica-master\factura-electronica-master\resources\cfdi-base-0.2.2\ejemplos\cfdv2.xml C:\Users\AARON\Documents\Factura_Electronica\factura-electronica-master\factura-electronica-master\resources\cfdi-base-0.2.2\ejemplos\emisor.key a0123456789 C:\Users\AARON\Documents\Factura_Electronica\factura-electronica-master\factura-electronica-master\resources\cfdi-base-0.2.2\ejemplos\emisor.cer C:\Users\AARON\Documents\Factura_Electronica\factura-electronica-master\factura-electronica-master\resources\cfdi-base-0.2.2\ejemplos\cfdv2_sellado_CSII.xml</exec.args>
+                <exec.executable>java</exec.executable>
+            </properties>
+        </action>
+        <action>
+            <actionName>debug</actionName>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath mx.bigdata.sat.cfd.tools.CLI sellar C:\Users\AARON\Documents\Factura_Electronica\factura-electronica-master\factura-electronica-master\resources\cfdi-base-0.2.2\ejemplos\cfdv2.xml C:\Users\AARON\Documents\Factura_Electronica\factura-electronica-master\factura-electronica-master\resources\cfdi-base-0.2.2\ejemplos\emisor.key a0123456789 C:\Users\AARON\Documents\Factura_Electronica\factura-electronica-master\factura-electronica-master\resources\cfdi-base-0.2.2\ejemplos\emisor.cer C:\Users\AARON\Documents\Factura_Electronica\factura-electronica-master\factura-electronica-master\resources\cfdi-base-0.2.2\ejemplos\cfdv2_sellado_CSII.xml</exec.args>
+                <exec.executable>java</exec.executable>
+                <jpda.listen>true</jpda.listen>
+            </properties>
+        </action>
+        <action>
+            <actionName>profile</actionName>
+            <goals>
+                <goal>process-classes</goal>
+                <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
+            </goals>
+            <properties>
+                <exec.args>${profiler.args} -classpath %classpath mx.bigdata.sat.cfd.tools.CLI sellar C:\Users\AARON\Documents\Factura_Electronica\factura-electronica-master\factura-electronica-master\resources\cfdi-base-0.2.2\ejemplos\cfdv2.xml C:\Users\AARON\Documents\Factura_Electronica\factura-electronica-master\factura-electronica-master\resources\cfdi-base-0.2.2\ejemplos\emisor.key a0123456789 C:\Users\AARON\Documents\Factura_Electronica\factura-electronica-master\factura-electronica-master\resources\cfdi-base-0.2.2\ejemplos\emisor.cer C:\Users\AARON\Documents\Factura_Electronica\factura-electronica-master\factura-electronica-master\resources\cfdi-base-0.2.2\ejemplos\cfdv2_sellado_CSII.xml</exec.args>
+                <exec.executable>${profiler.java}</exec.executable>
+            </properties>
+        </action>
+    </actions>
