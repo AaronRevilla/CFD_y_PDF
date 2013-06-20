@@ -90,7 +90,7 @@ public final class ExampleCFDv22Factory {
     u.setNoInterior("6"); 
     u.setPais("M\u00C9XICO"); 
     emisor.setExpedidoEn(u);
-    emisor.setDomicilioFiscal(uf);
+    //emisor.setDomicilioFiscal(uf);
     RegimenFiscal rf = of.createComprobanteEmisorRegimenFiscal();
     rf.setRegimen("simplificado");
     emisor.getRegimenFiscal().add(rf);

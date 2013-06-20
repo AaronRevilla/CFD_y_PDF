@@ -54,7 +54,7 @@ public class AccionCFD {
         cfd.verificar();
         System.out.println(_salida);
         cfd.guardar(new FileOutputStream(_salida));
-        CFDv22Pdf.crearPdf_static(sellado);
+        CFDv22Pdf.crearPdf_static(sellado, cfd.getCadenaOriginal());
         System.out.println("PDF creado");
     }
     
@@ -66,9 +66,14 @@ public class AccionCFD {
         System.err.println(sellado.getSello());
         cfd.validar();
         cfd.verificar();
+        System.out.println(_salida);
         cfd.guardar(new FileOutputStream(_salida));
         System.out.println("XML creado");
-        CFDv22Pdf.crearPdf_static(sellado);
+        CFDv22Pdf.crearPdf_static(sellado, cfd.getCadenaOriginal());
         System.out.println("PDF creado");
+    }
+    
+    public void testComp() throws Exception{
+        this.facturar(ExampleCFDv22Factory.createComprobante());
     }
 }

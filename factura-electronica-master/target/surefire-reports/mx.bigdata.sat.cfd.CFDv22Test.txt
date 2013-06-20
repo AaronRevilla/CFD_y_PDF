@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: mx.bigdata.sat.cfd.CFDv22Test
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.21 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.915 sec

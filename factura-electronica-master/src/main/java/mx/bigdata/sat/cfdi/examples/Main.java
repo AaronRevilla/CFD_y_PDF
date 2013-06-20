@@ -17,27 +17,34 @@
 package mx.bigdata.sat.cfdi.examples;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.security.PrivateKey;
 import java.security.cert.X509Certificate;
+import java.util.Properties;
+import mx.bigdata.sat.Pdf.CFDv32Pdf;
+import mx.bigdata.sat.cfd.AccionCFD;
 
-import mx.bigdata.sat.cfdi.schema.Comprobante;
-import mx.bigdata.sat.cfdi.CFDv3;
+import mx.bigdata.sat.cfdi.v32.schema.Comprobante;
+import mx.bigdata.sat.cfdi.CFDv32;
 import mx.bigdata.sat.security.KeyLoader;
 
 public final class Main {
     
   public static void main(String[] args) throws Exception {
-    CFDv3 cfd = new CFDv3(ExampleCFDFactory.createComprobante(), 
-                          "mx.bigdata.sat.cfdi.examples");
-    cfd.addNamespace("http://www.bigdata.mx/cfdi/example", "example");
-    PrivateKey key = KeyLoader.loadPKCS8PrivateKey(new FileInputStream(args[0]),
-                                            args[1]);
-    X509Certificate cert = KeyLoader
-      .loadX509Certificate(new FileInputStream(args[2]));
+    Properties propiedades = new Properties();  
+    propiedades.load(new FileInputStream("src/main/resources/config.properties"));
+        
+    CFDv32 cfd = new CFDv32(ExampleCFDv32Factory.createComprobante(),"mx.bigdata.sat.cfdi.examples");
+    cfd.addNamespace("http://www.w3.org/2001/XMLSchema-instance", "xsi");
+    PrivateKey key = KeyLoader.loadPKCS8PrivateKey(new FileInputStream( propiedades.getProperty("key")),propiedades.getProperty("contraseniaKey"));
+    X509Certificate cert = KeyLoader.loadX509Certificate(new FileInputStream( propiedades.getProperty("cer")));
     Comprobante sellado = cfd.sellarComprobante(key, cert);
     System.err.println(sellado.getSello());
     cfd.validar();
     cfd.verificar();
     cfd.guardar(System.out);
+    cfd.guardar(new FileOutputStream( propiedades.getProperty("salidaCFDv32")));
+    
+    CFDv32Pdf.crearPdf_static(sellado, cfd.getCadenaOriginal());
   }
 }

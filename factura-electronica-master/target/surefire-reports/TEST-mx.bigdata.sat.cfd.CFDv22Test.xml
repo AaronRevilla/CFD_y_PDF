@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="4.211" errors="0" skipped="0" tests="6" name="mx.bigdata.sat.cfd.CFDv22Test">
+<testsuite failures="0" time="3.905" errors="0" skipped="0" tests="6" name="mx.bigdata.sat.cfd.CFDv22Test">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_21\jre\bin"/>
@@ -60,10 +60,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="1.029" classname="mx.bigdata.sat.cfd.CFDv22Test" name="testSign"/>
-  <testcase time="0.564" classname="mx.bigdata.sat.cfd.CFDv22Test" name="testValidateVerify"/>
-  <testcase time="0.342" classname="mx.bigdata.sat.cfd.CFDv22Test" name="testSellarComprobante"/>
-  <testcase time="1.034" classname="mx.bigdata.sat.cfd.CFDv22Test" name="testValidateVerifyWithFile"/>
-  <testcase time="0.517" classname="mx.bigdata.sat.cfd.CFDv22Test" name="testValidateVerifyPrevious"/>
-  <testcase time="0.16" classname="mx.bigdata.sat.cfd.CFDv22Test" name="testOriginalString"/>
+  <testcase time="1.02" classname="mx.bigdata.sat.cfd.CFDv22Test" name="testSign"/>
+  <testcase time="0.25" classname="mx.bigdata.sat.cfd.CFDv22Test" name="testOriginalString"/>
+  <testcase time="0.637" classname="mx.bigdata.sat.cfd.CFDv22Test" name="testValidateVerifyPrevious"/>
+  <testcase time="0.737" classname="mx.bigdata.sat.cfd.CFDv22Test" name="testValidateVerifyWithFile"/>
+  <testcase time="0.259" classname="mx.bigdata.sat.cfd.CFDv22Test" name="testSellarComprobante"/>
+  <testcase time="0.42" classname="mx.bigdata.sat.cfd.CFDv22Test" name="testValidateVerify"/>
 </testsuite>

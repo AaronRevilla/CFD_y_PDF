@@ -35,7 +35,7 @@ public final class Main {
 	propiedades.load(new FileInputStream("src/main/resources/config.properties"));  
         System.out.println(propiedades.getProperty("key") +""+ propiedades.getProperty("contraseniaKey")+""+ propiedades.getProperty("cer")+""+ propiedades.getProperty("salida"));
         AccionCFD acdf = new AccionCFD( propiedades.getProperty("key"), propiedades.getProperty("contraseniaKey"), propiedades.getProperty("cer"), propiedades.getProperty("salida"));
-        acdf.facturar();
+        acdf.testComp();
         System.out.println("Facturado");
   }
 }

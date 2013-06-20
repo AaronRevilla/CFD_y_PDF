@@ -1,3 +1,4 @@
+mx.bigdata.sat.Pdf
 mx.bigdata.sat.cfd
 mx.bigdata.sat.cfd.examples
 mx.bigdata.sat.cfd.schema
@@ -23,5 +24,7 @@ mx.bigdata.sat.common.psgecfd.schema
 mx.bigdata.sat.common.terceros.schema
 mx.bigdata.sat.common.turistapasajeroextranjero.schema
 mx.bigdata.sat.common.ventavehiculos.schema
+mx.bigdata.sat.qr
 mx.bigdata.sat.schema.binder
 mx.bigdata.sat.security
+mx.bigdata.sat.utils
